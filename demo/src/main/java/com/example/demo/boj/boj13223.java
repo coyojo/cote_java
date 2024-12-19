@@ -65,14 +65,14 @@ public class boj13223 {
 
         String[] currentUnit = current.split(":");
         int currentHour = Integer.parseInt(currentUnit[0]);
-        int currnetMinute = Integer.parseInt(currentUnit[1]);
+        int currnetMinute = Integer.parseInt(currentUnit[1]);  // git test
         int currentSecond = Integer.parseInt(currentUnit[2]);
         int currentSecondAmount = currentHour * 3600 + currnetMinute * 60 + currentSecond;
 
         String[] dropUnit = drop.split(":");
         int dropHour = Integer.parseInt(dropUnit[0]);
         int dropMinute = Integer.parseInt(dropUnit[1]);
-        int dropSecond = Integer.parseInt(dropUnit[2]);
+        int dropSecond = Integer.parseInt(dropUnit[2]);  // git test
         int dropSecondAmount = dropHour * 3600 + dropMinute * 60 + dropSecond;
 
         int needSecondAmount = dropSecondAmount- currentSecondAmount ;
